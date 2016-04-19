@@ -1,0 +1,158 @@
+/*
+ Localizable.strings
+ BDK Sample
+ 
+ Created by Alan on 2016. 3. 10..
+ Copyright © 2016년 Camp Mobile Inc. All rights reserved.
+ */
+
+
+"Ascending" = "Ascending";
+"Cancel" = "Cancel";
+"Close" = "Close";
+"Descending" = "Descending";
+"Name" = "Name";
+"OK" = "OK";
+"Searching" = "Searching";
+"Sorting" = "Sorting";
+
+"Access Friend List" = "Access Friend List";
+"Access Token" = "Access Token";
+"App Connected" = "App Connected";
+"Author" = "Author";
+"Band Creation" = "Band Creation";
+"Band Information" = "Band Information";
+"Band Join" = "Band Join";
+"Band Leave" = "Band Withdrawal";
+"Band Selection" = "Bands";
+"Bands" = "Bands";
+"Clear All" = "Clear All";
+"Connection" = "Connection";
+"Not App Connected" = "Not App Connected";
+"Friends" = "Friends";
+"Guild Band" = "Guild Band";
+"Guild Bands" = "Guild Bands";
+"Join" = "Join";
+"Members" = "Members";
+"Member Count" = "Member Count";
+"Messages" = "Messages";
+"Official Band" = "Official Band";
+"Open" = "Band App Open";
+"Others" = "Others";
+"Posting" = "Posting";
+"Posts" = "Posts";
+"Quota" = "Quota";
+"Quotas" = "Quotas";
+"Reload" = "Reload";
+"Send" = "Send";
+"Use Presets" = "Use Presets";
+"Users" = "Users";
+
+
+"topMenu.menu.logout" = "Logout";
+"topMenu.menu.disconnect" = "Disconnect";
+"topMenu.menu.getAccessToken" = "Get Access Token";
+
+"topMenu.menu.getProfile" = "Show My Profile";
+"topMenu.menu.getQuotas" = "Show Quotas";
+
+"topMenu.menu.getFriends" = "Show Friends Connected With This App";
+"topMenu.menu.getBandMembers" = "Show Band Members";
+
+"topMenu.menu.createGuildBand" = "Create a Guild Band";
+
+"topMenu.menu.joinOfficialBand" = "Join Official Band";
+"topMenu.menu.joinGuildBand" = "Join a Guild Band";
+
+"topMenu.menu.getBands" = "Show Bands";
+"topMenu.menu.getOfficialBandInformation" = "Show Official Band Information";
+"topMenu.menu.getOfficialBandPosts" = "Show Official Band Post List";
+"topMenu.menu.getOfficialBandNotices" = "Show Official Band Notice List";
+"topMenu.menu.getGuildBandPosts" = "Show Guild Band Post List";
+"topMenu.menu.getGuildBandNotices" = "Show Guild Band Notice List";
+
+"topMenu.menu.writePost" = "Write Posts";
+
+"topMenu.menu.sendInvitation" = "Send Invitations for Not Connected Friends";
+"topMenu.menu.sendMessage" = "Send Messages for the Connected Friends";
+
+"topMenu.menu.openBand" = "Open Bands Home With Band App";
+"topMenu.menu.openPost" = "Open Posts With Band App";
+"topMenu.menu.openBandChat" = "Open Band-Chats With Band App";
+"topMenu.menu.installBandApp" = "Install Band App";
+
+"topMenu.menu.leaveGuildBand" = "Withdraw from Guild Bands";
+
+
+"member.option.connection" = "Connection";
+"member.option.messageAcceptance" = "Message Acceptance";
+"member.option.searching.field.placeholder" = "Enter a member name.";
+
+"member.cell_detail.sendMessage" = "Send a message";
+"member.cell_detail.invite" = "Invite";
+
+
+"band.option.searching.field.placeholder" = "Enter a band name.";
+
+"band.join.nickname.placeholder" = "Nickname for this band";
+"band.join.profileImageURL.placeholder" = "Profile image URL";
+"band.join.joined" = "Succeed to join the guild band, [%@].";
+"band.join.withdrawn" = "Succeed to withdraw from the guild band, [%@].";
+
+
+"officialBand.notExist" = "There is no official band for this app.";
+
+
+"post.form.content.placeHolder" = "Write post content.";
+"post.form.imageURL.placeholder" = "Attached Image URL";
+"post.form.snippetTitle.placeholder" = "Title for Snippet";
+"post.form.snippetText.placeholder" = "Content for Snippet";
+"post.form.snippetLinkName.placeholder" = "Readable Link for Snippet";
+"post.form.snippetAndroidLink.placeholder" = "Android Link for Snippet";
+"post.form.snippetIOSLink.placeholder" = "iOS Link for Snippet";
+"post.form.snippetText.preset" = "Test with %@";
+"post.form.snippetLinkName.preset" = "Open %@";
+"post.form.postingSucceeded" = "Succeed to post.";
+
+
+"message.form.invitation.preset" = "Invite you to %@ guild band.";
+"message.form.message.preset" = "There is a good news in %@. Check it now.";
+"message.form.title.placeholder" = "Title for Message";
+"message.form.message.placeholder" = "Content for Message";
+"message.form.imageURL.placeholder" = "Attached Image URL";
+"message.form.linkName.placeholder" = "Readable Link";
+"message.form.androidLink.placeholder" = "Android Link";
+"message.form.iOSLink.placeholder" = "iOS Link";
+"message.form.sendSucceeded" = "Succeed to send message.";
+
+
+"alert.band.isGuildBand" = "Guild Band";
+
+"alert.customURL.message" = "Handle the the following URL";
+
+"alert.disconnect.message" = "Succeed to disconnect.";
+
+
+"alert.error.auth.message" = "Access token has been expired.\nPlease login again.";
+"alert.error.bandAppNotInstalled.message" = "BAND app is not installed.\nInstall now?";
+
+
+"alert.loginSucceeded.message" = "Succeed to login.";
+"alert.logout.message" = "Succeed to logout.";
+
+"alert.officialBand.isJoined" = "Join";
+
+"alert.officialBandJoin.message" = "Succeed to join the official band.";
+
+"alert.officialBandJoinQuery.message" = "Need to join official band.\nJoin now?";
+
+"alert.post.date" = "Date of Post";
+"alert.post.commentCount" = "Comment Count";
+
+"alert.profile.allowsMessages" = "Message Acceptance";
+"alert.profile.isConnected" = "Connection";
+
+"alert.quotas.expiredAt" = "Will be expired at %@.";
+"alert.quotas.invitationQuota" = "Invitation Quota";
+"alert.quotas.messageQuota" = "Message Quota";
+"alert.quotas.postQuota" = "Post Quota";

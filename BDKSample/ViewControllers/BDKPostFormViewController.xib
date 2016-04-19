@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BDKPostFormViewController">
+            <connections>
+                <outlet property="clearButton" destination="03h-Vm-Q5i" id="xSb-00-txn"/>
+                <outlet property="contentImageURLField" destination="W9T-Ba-iQI" id="8Ki-Kx-Idm"/>
+                <outlet property="contentImageView" destination="BpS-JY-I9A" id="hmf-5i-nfn"/>
+                <outlet property="contentTextView" destination="zju-Y2-0g4" id="yRk-ex-YaW"/>
+                <outlet property="contentTextViewWidthConstraint" destination="CSY-C6-YbE" id="41H-V6-5KB"/>
+                <outlet property="indicator" destination="Rp1-Nu-Zbi" id="BqF-Lo-Kgu"/>
+                <outlet property="presetButton" destination="IKc-z8-T7Y" id="8Om-M4-Web"/>
+                <outlet property="reloadButton" destination="h5K-Sc-Fdc" id="NRF-Of-vAI"/>
+                <outlet property="scrollView" destination="A7Y-pm-14d" id="Xlv-DS-4OA"/>
+                <outlet property="snippetAndroidLinkField" destination="TOV-t0-9Sp" id="Cp1-vO-zh6"/>
+                <outlet property="snippetIOSLinkField" destination="Zua-b6-aDc" id="inZ-qz-ldh"/>
+                <outlet property="snippetLinkNameField" destination="hCH-aX-HJF" id="BpL-id-AoB"/>
+                <outlet property="snippetTextField" destination="Uhd-lb-mIM" id="fwY-PJ-3X8"/>
+                <outlet property="snippetTitleField" destination="8Xu-4X-V69" id="TBL-Bi-lDu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A7Y-pm-14d">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKc-z8-T7Y" userLabel="Preset Button">
+                            <rect key="frame" x="20" y="12" width="83" height="30"/>
+                            <state key="normal" title="Use Presets"/>
+                            <connections>
+                                <action selector="touchUpInsidePresetButton:" destination="-1" eventType="touchUpInside" id="bUt-Dp-YAk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03h-Vm-Q5i" userLabel="Clear Button">
+                            <rect key="frame" x="123" y="12" width="57" height="30"/>
+                            <state key="normal" title="Clear All"/>
+                            <connections>
+                                <action selector="touchUpInsideClearButton:" destination="-1" eventType="touchUpInside" id="bHT-r2-6KC"/>
+                            </connections>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zju-Y2-0g4" userLabel="Content Text View">
+                            <rect key="frame" x="20" y="54" width="560" height="240"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.050000000000000003" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="240" id="AL3-oc-57I"/>
+                                <constraint firstAttribute="width" constant="560" id="CSY-C6-YbE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="68v-eo-Hiz"/>
+                            </connections>
+                        </textView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="W9T-Ba-iQI" userLabel="Content Image URL Field">
+                            <rect key="frame" x="20" y="306" width="560" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            <connections>
+                                <action selector="editingChangedContentImageURLField:" destination="-1" eventType="editingChanged" id="fUz-49-iJ7"/>
+                                <outlet property="delegate" destination="-1" id="44G-mI-ZMz"/>
+                            </connections>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BpS-JY-I9A" userLabel="Content Image View">
+                            <rect key="frame" x="220" y="344" width="160" height="120"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.050000000000000003" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="aYk-gj-ZhI"/>
+                                <constraint firstAttribute="width" constant="160" id="zSX-zf-efY"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5K-Sc-Fdc" userLabel="Reload Button">
+                            <rect key="frame" x="388" y="434" width="47" height="30"/>
+                            <state key="normal" title="Reload"/>
+                            <connections>
+                                <action selector="touchUpInsideReloadButton:" destination="-1" eventType="touchUpInside" id="WQv-LP-eJ3"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8Xu-4X-V69" userLabel="Snippet Title Field">
+                            <rect key="frame" x="20" y="476" width="560" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            <connections>
+                                <action selector="editingChangedSnippetTextField:" destination="-1" eventType="editingChanged" id="Fem-a3-Kfl"/>
+                                <outlet property="delegate" destination="-1" id="3yb-Xg-2Ys"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Uhd-lb-mIM" userLabel="Snippet Text Field">
+                            <rect key="frame" x="20" y="518" width="560" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            <connections>
+                                <action selector="editingChangedSnippetTextField:" destination="-1" eventType="editingChanged" id="Wc9-hO-dEi"/>
+                                <outlet property="delegate" destination="-1" id="Pdo-7u-lwR"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hCH-aX-HJF" userLabel="Snippet Link Name Field">
+                            <rect key="frame" x="20" y="560" width="560" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            <connections>
+                                <action selector="editingChangedSnippetTextField:" destination="-1" eventType="editingChanged" id="Gfo-bD-Y4v"/>
+                                <outlet property="delegate" destination="-1" id="wK9-Hi-pfJ"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TOV-t0-9Sp" userLabel="Snippet Android Link Field">
+                            <rect key="frame" x="20" y="602" width="560" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            <connections>
+                                <action selector="editingChangedSnippetTextField:" destination="-1" eventType="editingChanged" id="trA-yB-svA"/>
+                                <outlet property="delegate" destination="-1" id="ODp-CH-0MB"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Zua-b6-aDc" userLabel="Snippet iOS Link Field">
+                            <rect key="frame" x="20" y="644" width="560" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            <connections>
+                                <action selector="editingChangedSnippetTextField:" destination="-1" eventType="editingChanged" id="nzv-sZ-KrE"/>
+                                <outlet property="delegate" destination="-1" id="j4D-qL-rRi"/>
+                            </connections>
+                        </textField>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Rp1-Nu-Zbi">
+                            <rect key="frame" x="290" y="290" width="20" height="20"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="8Xu-4X-V69" firstAttribute="leading" secondItem="zju-Y2-0g4" secondAttribute="leading" id="0Jq-Zw-kAA"/>
+                        <constraint firstItem="hCH-aX-HJF" firstAttribute="trailing" secondItem="zju-Y2-0g4" secondAttribute="trailing" id="2bT-Ab-xld"/>
+                        <constraint firstItem="zju-Y2-0g4" firstAttribute="leading" secondItem="A7Y-pm-14d" secondAttribute="leading" constant="20" id="3r8-Tx-U1s"/>
+                        <constraint firstItem="Uhd-lb-mIM" firstAttribute="top" secondItem="8Xu-4X-V69" secondAttribute="bottom" constant="12" id="4rM-WV-CqP"/>
+                        <constraint firstItem="zju-Y2-0g4" firstAttribute="leading" secondItem="IKc-z8-T7Y" secondAttribute="leading" id="6Au-NB-J64"/>
+                        <constraint firstItem="W9T-Ba-iQI" firstAttribute="trailing" secondItem="zju-Y2-0g4" secondAttribute="trailing" id="7pA-be-R8J"/>
+                        <constraint firstItem="Uhd-lb-mIM" firstAttribute="trailing" secondItem="zju-Y2-0g4" secondAttribute="trailing" id="8xB-Di-xb6"/>
+                        <constraint firstItem="Zua-b6-aDc" firstAttribute="top" secondItem="TOV-t0-9Sp" secondAttribute="bottom" constant="12" id="92D-Wj-OHt"/>
+                        <constraint firstItem="Zua-b6-aDc" firstAttribute="trailing" secondItem="zju-Y2-0g4" secondAttribute="trailing" id="AkB-DN-6J7"/>
+                        <constraint firstItem="03h-Vm-Q5i" firstAttribute="leading" secondItem="IKc-z8-T7Y" secondAttribute="trailing" constant="20" id="Dwz-Xq-KRx"/>
+                        <constraint firstItem="IKc-z8-T7Y" firstAttribute="top" secondItem="A7Y-pm-14d" secondAttribute="top" constant="12" id="E2m-VT-U8V"/>
+                        <constraint firstItem="W9T-Ba-iQI" firstAttribute="leading" secondItem="zju-Y2-0g4" secondAttribute="leading" id="EyS-iB-Z9s"/>
+                        <constraint firstItem="8Xu-4X-V69" firstAttribute="top" secondItem="BpS-JY-I9A" secondAttribute="bottom" constant="12" id="GSW-j4-x2l"/>
+                        <constraint firstItem="hCH-aX-HJF" firstAttribute="leading" secondItem="zju-Y2-0g4" secondAttribute="leading" id="I2j-3B-Yua"/>
+                        <constraint firstItem="03h-Vm-Q5i" firstAttribute="bottom" secondItem="IKc-z8-T7Y" secondAttribute="bottom" id="Icf-6K-ZJP"/>
+                        <constraint firstItem="Rp1-Nu-Zbi" firstAttribute="centerY" secondItem="A7Y-pm-14d" secondAttribute="centerY" id="KA3-uh-hpp"/>
+                        <constraint firstAttribute="trailing" secondItem="zju-Y2-0g4" secondAttribute="trailing" constant="20" id="Mi3-aa-Jcp"/>
+                        <constraint firstAttribute="bottom" secondItem="Zua-b6-aDc" secondAttribute="bottom" constant="12" id="QUD-cX-JpP"/>
+                        <constraint firstItem="h5K-Sc-Fdc" firstAttribute="bottom" secondItem="BpS-JY-I9A" secondAttribute="bottom" id="RIU-XY-geb"/>
+                        <constraint firstItem="Rp1-Nu-Zbi" firstAttribute="centerX" secondItem="A7Y-pm-14d" secondAttribute="centerX" id="Rgm-67-Y88"/>
+                        <constraint firstItem="BpS-JY-I9A" firstAttribute="top" secondItem="W9T-Ba-iQI" secondAttribute="bottom" constant="8" id="S11-ii-IbJ"/>
+                        <constraint firstItem="8Xu-4X-V69" firstAttribute="trailing" secondItem="zju-Y2-0g4" secondAttribute="trailing" id="Zp3-px-QDR"/>
+                        <constraint firstItem="hCH-aX-HJF" firstAttribute="top" secondItem="Uhd-lb-mIM" secondAttribute="bottom" constant="12" id="aig-Qj-C5b"/>
+                        <constraint firstItem="h5K-Sc-Fdc" firstAttribute="leading" secondItem="BpS-JY-I9A" secondAttribute="trailing" constant="8" id="hZC-B5-KPv"/>
+                        <constraint firstItem="Uhd-lb-mIM" firstAttribute="leading" secondItem="zju-Y2-0g4" secondAttribute="leading" id="hb4-jd-LZC"/>
+                        <constraint firstItem="BpS-JY-I9A" firstAttribute="centerX" secondItem="A7Y-pm-14d" secondAttribute="centerX" id="k2X-fy-bSX"/>
+                        <constraint firstItem="TOV-t0-9Sp" firstAttribute="trailing" secondItem="zju-Y2-0g4" secondAttribute="trailing" id="kjd-Qd-T96"/>
+                        <constraint firstItem="TOV-t0-9Sp" firstAttribute="top" secondItem="hCH-aX-HJF" secondAttribute="bottom" constant="12" id="nDq-5s-8Xd"/>
+                        <constraint firstItem="zju-Y2-0g4" firstAttribute="top" secondItem="IKc-z8-T7Y" secondAttribute="bottom" constant="12" id="nLI-gy-Jb1"/>
+                        <constraint firstItem="Zua-b6-aDc" firstAttribute="leading" secondItem="zju-Y2-0g4" secondAttribute="leading" id="oAN-Aq-brd"/>
+                        <constraint firstItem="03h-Vm-Q5i" firstAttribute="top" secondItem="IKc-z8-T7Y" secondAttribute="top" id="rH0-iB-MYI"/>
+                        <constraint firstItem="W9T-Ba-iQI" firstAttribute="top" secondItem="zju-Y2-0g4" secondAttribute="bottom" constant="12" id="uEO-uo-UzG"/>
+                        <constraint firstItem="TOV-t0-9Sp" firstAttribute="leading" secondItem="zju-Y2-0g4" secondAttribute="leading" id="wIt-Tp-KfL"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="A7Y-pm-14d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QFY-F1-mgm"/>
+                <constraint firstItem="A7Y-pm-14d" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gF1-q0-faw"/>
+                <constraint firstAttribute="bottom" secondItem="A7Y-pm-14d" secondAttribute="bottom" id="lYp-ZZ-TnZ"/>
+                <constraint firstAttribute="trailing" secondItem="A7Y-pm-14d" secondAttribute="trailing" id="zN6-OQ-koH"/>
+            </constraints>
+            <point key="canvasLocation" x="1044" y="481"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E7214BCE1CC5CFC100BC16BD /* BandSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7214BCC1CC5CFC100BC16BD /* BandSDK.framework */; };
+		E7214BCF1CC5CFC100BC16BD /* BandSDKBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E7214BCD1CC5CFC100BC16BD /* BandSDKBundle.bundle */; };
+		E76898C41CABD3A600CA0BA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E76898C31CABD3A600CA0BA6 /* main.m */; };
+		E76898C71CABD3A600CA0BA6 /* BDKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E76898C61CABD3A600CA0BA6 /* BDKAppDelegate.m */; };
+		E76898CF1CABD3A600CA0BA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E76898CE1CABD3A600CA0BA6 /* Assets.xcassets */; };
+		E76898DA1CABD43700CA0BA6 /* BDKLaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76898D91CABD43700CA0BA6 /* BDKLaunchScreen.xib */; };
+		E76898E31CABD5C900CA0BA6 /* BDKKeyboardAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = E76898E21CABD5C900CA0BA6 /* BDKKeyboardAccessoryView.m */; };
+		E76898FF1CABD5DD00CA0BA6 /* BDKBandJoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76898E61CABD5DD00CA0BA6 /* BDKBandJoinViewController.m */; };
+		E76899001CABD5DD00CA0BA6 /* BDKBandJoinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76898E71CABD5DD00CA0BA6 /* BDKBandJoinViewController.xib */; };
+		E76899011CABD5DD00CA0BA6 /* BDKBandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76898E91CABD5DD00CA0BA6 /* BDKBandViewController.m */; };
+		E76899021CABD5DD00CA0BA6 /* BDKBandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76898EA1CABD5DD00CA0BA6 /* BDKBandViewController.xib */; };
+		E76899031CABD5DD00CA0BA6 /* BDKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76898EC1CABD5DD00CA0BA6 /* BDKLoginViewController.m */; };
+		E76899041CABD5DD00CA0BA6 /* BDKLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76898ED1CABD5DD00CA0BA6 /* BDKLoginViewController.xib */; };
+		E76899051CABD5DD00CA0BA6 /* BDKMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76898EF1CABD5DD00CA0BA6 /* BDKMemberViewController.m */; };
+		E76899061CABD5DD00CA0BA6 /* BDKMemberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76898F01CABD5DD00CA0BA6 /* BDKMemberViewController.xib */; };
+		E76899071CABD5DD00CA0BA6 /* BDKMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76898F21CABD5DD00CA0BA6 /* BDKMenuViewController.m */; };
+		E76899081CABD5DD00CA0BA6 /* BDKMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76898F31CABD5DD00CA0BA6 /* BDKMenuViewController.xib */; };
+		E76899091CABD5DD00CA0BA6 /* BDKMessageFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76898F51CABD5DD00CA0BA6 /* BDKMessageFormViewController.m */; };
+		E768990A1CABD5DD00CA0BA6 /* BDKMessageFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76898F61CABD5DD00CA0BA6 /* BDKMessageFormViewController.xib */; };
+		E768990B1CABD5DD00CA0BA6 /* BDKPostFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76898F81CABD5DD00CA0BA6 /* BDKPostFormViewController.m */; };
+		E768990C1CABD5DD00CA0BA6 /* BDKPostFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76898F91CABD5DD00CA0BA6 /* BDKPostFormViewController.xib */; };
+		E768990D1CABD5DD00CA0BA6 /* BDKPostListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76898FB1CABD5DD00CA0BA6 /* BDKPostListViewController.m */; };
+		E768990E1CABD5DD00CA0BA6 /* BDKPostListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76898FC1CABD5DD00CA0BA6 /* BDKPostListViewController.xib */; };
+		E768990F1CABD5DD00CA0BA6 /* BDKSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76898FE1CABD5DD00CA0BA6 /* BDKSplashViewController.m */; };
+		E76899151CABD5EA00CA0BA6 /* BDKErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E76899121CABD5EA00CA0BA6 /* BDKErrorHandler.m */; };
+		E76899161CABD5EA00CA0BA6 /* BDKJoinableGuildBandManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E76899141CABD5EA00CA0BA6 /* BDKJoinableGuildBandManager.m */; };
+		E76899221CABD60B00CA0BA6 /* NSError+BDKSample.m in Sources */ = {isa = PBXBuildFile; fileRef = E76899191CABD60B00CA0BA6 /* NSError+BDKSample.m */; };
+		E76899231CABD60B00CA0BA6 /* NSString+BDKSample.m in Sources */ = {isa = PBXBuildFile; fileRef = E768991B1CABD60B00CA0BA6 /* NSString+BDKSample.m */; };
+		E76899241CABD60B00CA0BA6 /* UIAlertView+BDKSample.m in Sources */ = {isa = PBXBuildFile; fileRef = E768991D1CABD60B00CA0BA6 /* UIAlertView+BDKSample.m */; };
+		E76899251CABD60B00CA0BA6 /* UIImage+BDKSample.m in Sources */ = {isa = PBXBuildFile; fileRef = E768991F1CABD60B00CA0BA6 /* UIImage+BDKSample.m */; };
+		E76899261CABD60B00CA0BA6 /* UITextView+BDKSample.m in Sources */ = {isa = PBXBuildFile; fileRef = E76899211CABD60B00CA0BA6 /* UITextView+BDKSample.m */; };
+		E768992B1CABD6F400CA0BA6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E768992D1CABD6F400CA0BA6 /* Localizable.strings */; };
+		E76899341CABE54000CA0BA6 /* launching_animation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E76899281CABD64F00CA0BA6 /* launching_animation.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E7214BCC1CC5CFC100BC16BD /* BandSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BandSDK.framework; sourceTree = "<group>"; };
+		E7214BCD1CC5CFC100BC16BD /* BandSDKBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BandSDKBundle.bundle; sourceTree = "<group>"; };
+		E76898BF1CABD3A500CA0BA6 /* BDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E76898C31CABD3A600CA0BA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E76898C51CABD3A600CA0BA6 /* BDKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDKAppDelegate.h; sourceTree = "<group>"; };
+		E76898C61CABD3A600CA0BA6 /* BDKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDKAppDelegate.m; sourceTree = "<group>"; };
+		E76898CE1CABD3A600CA0BA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E76898D31CABD3A600CA0BA6 /* BDKSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BDKSample-Info.plist"; sourceTree = "<group>"; };
+		E76898D91CABD43700CA0BA6 /* BDKLaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDKLaunchScreen.xib; sourceTree = "<group>"; };
+		E76898E11CABD5C900CA0BA6 /* BDKKeyboardAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDKKeyboardAccessoryView.h; sourceTree = "<group>"; };
+		E76898E21CABD5C900CA0BA6 /* BDKKeyboardAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDKKeyboardAccessoryView.m; sourceTree = "<group>"; };
+		E76898E51CABD5DD00CA0BA6 /* BDKBandJoinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDKBandJoinViewController.h; sourceTree = "<group>"; };
+		E76898E61CABD5DD00CA0BA6 /* BDKBandJoinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDKBandJoinViewController.m; sourceTree = "<group>"; };
+		E76898E71CABD5DD00CA0BA6 /* BDKBandJoinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDKBandJoinViewController.xib; sourceTree = "<group>"; };
+		E76898E81CABD5DD00CA0BA6 /* BDKBandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDKBandViewController.h; sourceTree = "<group>"; };
+		E76898E91CABD5DD00CA0BA6 /* BDKBandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDKBandViewController.m; sourceTree = "<group>"; };
+		E76898EA1CABD5DD00CA0BA6 /* BDKBandViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDKBandViewController.xib; sourceTree = "<group>"; };
+		E76898EB1CABD5DD00CA0BA6 /* BDKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDKLoginViewController.h; sourceTree = "<group>"; };
+		E76898EC1CABD5DD00CA0BA6 /* BDKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDKLoginViewController.m; sourceTree = "<group>"; };
+		E76898ED1CABD5DD00CA0BA6 /* BDKLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDKLoginViewController.xib; sourceTree = "<group>"; };
+		E76898EE1CABD5DD00CA0BA6 /* BDKMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDKMemberViewController.h; sourceTree = "<group>"; };
+		E76898EF1CABD5DD00CA0BA6 /* BDKMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDKMemberViewController.m; sourceTree = "<group>"; };
+		E76898F01CABD5DD00CA0BA6 /* BDKMemberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDKMemberViewController.xib; sourceTree = "<group>"; };
+		E76898F11CABD5DD00CA0BA6 /* BDKMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDKMenuViewController.h; sourceTree = "<group>"; };
+		E76898F21CABD5DD00CA0BA6 /* BDKMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDKMenuViewController.m; sourceTree = "<group>"; };
+		E76898F31CABD5DD00CA0BA6 /* BDKMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDKMenuViewController.xib; sourceTree = "<group>"; };
+		E76898F41CABD5DD00CA0BA6 /* BDKMessageFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDKMessageFormViewController.h; sourceTree = "<group>"; };
+		E76898F51CABD5DD00CA0BA6 /* BDKMessageFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDKMessageFormViewController.m; sourceTree = "<group>"; };
+		E76898F61CABD5DD00CA0BA6 /* BDKMessageFormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDKMessageFormViewController.xib; sourceTree = "<group>"; };
+		E76898F71CABD5DD00CA0BA6 /* BDKPostFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDKPostFormViewController.h; sourceTree = "<group>"; };
+		E76898F81CABD5DD00CA0BA6 /* BDKPostFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDKPostFormViewController.m; sourceTree = "<group>"; };
+		E76898F91CABD5DD00CA0BA6 /* BDKPostFormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDKPostFormViewController.xib; sourceTree = "<group>"; };
+		E76898FA1CABD5DD00CA0BA6 /* BDKPostListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDKPostListViewController.h; sourceTree = "<group>"; };
+		E76898FB1CABD5DD00CA0BA6 /* BDKPostListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDKPostListViewController.m; sourceTree = "<group>"; };
+		E76898FC1CABD5DD00CA0BA6 /* BDKPostListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDKPostListViewController.xib; sourceTree = "<group>"; };
+		E76898FD1CABD5DD00CA0BA6 /* BDKSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDKSplashViewController.h; sourceTree = "<group>"; };
+		E76898FE1CABD5DD00CA0BA6 /* BDKSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDKSplashViewController.m; sourceTree = "<group>"; };
+		E76899111CABD5EA00CA0BA6 /* BDKErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDKErrorHandler.h; sourceTree = "<group>"; };
+		E76899121CABD5EA00CA0BA6 /* BDKErrorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDKErrorHandler.m; sourceTree = "<group>"; };
+		E76899131CABD5EA00CA0BA6 /* BDKJoinableGuildBandManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDKJoinableGuildBandManager.h; sourceTree = "<group>"; };
+		E76899141CABD5EA00CA0BA6 /* BDKJoinableGuildBandManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDKJoinableGuildBandManager.m; sourceTree = "<group>"; };
+		E76899181CABD60B00CA0BA6 /* NSError+BDKSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+BDKSample.h"; sourceTree = "<group>"; };
+		E76899191CABD60B00CA0BA6 /* NSError+BDKSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+BDKSample.m"; sourceTree = "<group>"; };
+		E768991A1CABD60B00CA0BA6 /* NSString+BDKSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BDKSample.h"; sourceTree = "<group>"; };
+		E768991B1CABD60B00CA0BA6 /* NSString+BDKSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BDKSample.m"; sourceTree = "<group>"; };
+		E768991C1CABD60B00CA0BA6 /* UIAlertView+BDKSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+BDKSample.h"; sourceTree = "<group>"; };
+		E768991D1CABD60B00CA0BA6 /* UIAlertView+BDKSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+BDKSample.m"; sourceTree = "<group>"; };
+		E768991E1CABD60B00CA0BA6 /* UIImage+BDKSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BDKSample.h"; sourceTree = "<group>"; };
+		E768991F1CABD60B00CA0BA6 /* UIImage+BDKSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BDKSample.m"; sourceTree = "<group>"; };
+		E76899201CABD60B00CA0BA6 /* UITextView+BDKSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+BDKSample.h"; sourceTree = "<group>"; };
+		E76899211CABD60B00CA0BA6 /* UITextView+BDKSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+BDKSample.m"; sourceTree = "<group>"; };
+		E76899281CABD64F00CA0BA6 /* launching_animation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = launching_animation.mp4; sourceTree = "<group>"; };
+		E768992C1CABD6F400CA0BA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E768992E1CABD70000CA0BA6 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E768992F1CABD78A00CA0BA6 /* BDKSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BDKSample-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E76898BC1CABD3A500CA0BA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7214BCE1CC5CFC100BC16BD /* BandSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E76898B61CABD3A500CA0BA6 = {
+			isa = PBXGroup;
+			children = (
+				E76898C11CABD3A600CA0BA6 /* BDKSample */,
+				E76898DB1CABD4E400CA0BA6 /* Frameworks */,
+				E76898C01CABD3A500CA0BA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E76898C01CABD3A500CA0BA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E76898BF1CABD3A500CA0BA6 /* BDKSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E76898C11CABD3A600CA0BA6 /* BDKSample */ = {
+			isa = PBXGroup;
+			children = (
+				E76898C51CABD3A600CA0BA6 /* BDKAppDelegate.h */,
+				E76898C61CABD3A600CA0BA6 /* BDKAppDelegate.m */,
+				E76898D91CABD43700CA0BA6 /* BDKLaunchScreen.xib */,
+				E76898E01CABD5C900CA0BA6 /* Views */,
+				E76898E41CABD5DD00CA0BA6 /* ViewControllers */,
+				E76899101CABD5EA00CA0BA6 /* Modules */,
+				E76899171CABD60B00CA0BA6 /* Categories */,
+				E76898CE1CABD3A600CA0BA6 /* Assets.xcassets */,
+				E76899271CABD62400CA0BA6 /* Resources */,
+				E76898C21CABD3A600CA0BA6 /* Supporting Files */,
+			);
+			path = BDKSample;
+			sourceTree = "<group>";
+		};
+		E76898C21CABD3A600CA0BA6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E76898D31CABD3A600CA0BA6 /* BDKSample-Info.plist */,
+				E76898C31CABD3A600CA0BA6 /* main.m */,
+				E768992F1CABD78A00CA0BA6 /* BDKSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E76898DB1CABD4E400CA0BA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7214BCC1CC5CFC100BC16BD /* BandSDK.framework */,
+				E7214BCD1CC5CFC100BC16BD /* BandSDKBundle.bundle */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		E76898E01CABD5C900CA0BA6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E76898E11CABD5C900CA0BA6 /* BDKKeyboardAccessoryView.h */,
+				E76898E21CABD5C900CA0BA6 /* BDKKeyboardAccessoryView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E76898E41CABD5DD00CA0BA6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E76898FD1CABD5DD00CA0BA6 /* BDKSplashViewController.h */,
+				E76898FE1CABD5DD00CA0BA6 /* BDKSplashViewController.m */,
+				E76898EB1CABD5DD00CA0BA6 /* BDKLoginViewController.h */,
+				E76898EC1CABD5DD00CA0BA6 /* BDKLoginViewController.m */,
+				E76898ED1CABD5DD00CA0BA6 /* BDKLoginViewController.xib */,
+				E76898F11CABD5DD00CA0BA6 /* BDKMenuViewController.h */,
+				E76898F21CABD5DD00CA0BA6 /* BDKMenuViewController.m */,
+				E76898F31CABD5DD00CA0BA6 /* BDKMenuViewController.xib */,
+				E76898EE1CABD5DD00CA0BA6 /* BDKMemberViewController.h */,
+				E76898EF1CABD5DD00CA0BA6 /* BDKMemberViewController.m */,
+				E76898F01CABD5DD00CA0BA6 /* BDKMemberViewController.xib */,
+				E76898E81CABD5DD00CA0BA6 /* BDKBandViewController.h */,
+				E76898E91CABD5DD00CA0BA6 /* BDKBandViewController.m */,
+				E76898EA1CABD5DD00CA0BA6 /* BDKBandViewController.xib */,
+				E76898E51CABD5DD00CA0BA6 /* BDKBandJoinViewController.h */,
+				E76898E61CABD5DD00CA0BA6 /* BDKBandJoinViewController.m */,
+				E76898E71CABD5DD00CA0BA6 /* BDKBandJoinViewController.xib */,
+				E76898FA1CABD5DD00CA0BA6 /* BDKPostListViewController.h */,
+				E76898FB1CABD5DD00CA0BA6 /* BDKPostListViewController.m */,
+				E76898FC1CABD5DD00CA0BA6 /* BDKPostListViewController.xib */,
+				E76898F71CABD5DD00CA0BA6 /* BDKPostFormViewController.h */,
+				E76898F81CABD5DD00CA0BA6 /* BDKPostFormViewController.m */,
+				E76898F91CABD5DD00CA0BA6 /* BDKPostFormViewController.xib */,
+				E76898F41CABD5DD00CA0BA6 /* BDKMessageFormViewController.h */,
+				E76898F51CABD5DD00CA0BA6 /* BDKMessageFormViewController.m */,
+				E76898F61CABD5DD00CA0BA6 /* BDKMessageFormViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E76899101CABD5EA00CA0BA6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E76899111CABD5EA00CA0BA6 /* BDKErrorHandler.h */,
+				E76899121CABD5EA00CA0BA6 /* BDKErrorHandler.m */,
+				E76899131CABD5EA00CA0BA6 /* BDKJoinableGuildBandManager.h */,
+				E76899141CABD5EA00CA0BA6 /* BDKJoinableGuildBandManager.m */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E76899171CABD60B00CA0BA6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E76899181CABD60B00CA0BA6 /* NSError+BDKSample.h */,
+				E76899191CABD60B00CA0BA6 /* NSError+BDKSample.m */,
+				E768991A1CABD60B00CA0BA6 /* NSString+BDKSample.h */,
+				E768991B1CABD60B00CA0BA6 /* NSString+BDKSample.m */,
+				E768991E1CABD60B00CA0BA6 /* UIImage+BDKSample.h */,
+				E768991F1CABD60B00CA0BA6 /* UIImage+BDKSample.m */,
+				E76899201CABD60B00CA0BA6 /* UITextView+BDKSample.h */,
+				E76899211CABD60B00CA0BA6 /* UITextView+BDKSample.m */,
+				E768991C1CABD60B00CA0BA6 /* UIAlertView+BDKSample.h */,
+				E768991D1CABD60B00CA0BA6 /* UIAlertView+BDKSample.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		E76899271CABD62400CA0BA6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E768992D1CABD6F400CA0BA6 /* Localizable.strings */,
+				E76899281CABD64F00CA0BA6 /* launching_animation.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E76898BE1CABD3A500CA0BA6 /* BDKSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E76898D61CABD3A600CA0BA6 /* Build configuration list for PBXNativeTarget "BDKSample" */;
+			buildPhases = (
+				E76898BB1CABD3A500CA0BA6 /* Sources */,
+				E76898BC1CABD3A500CA0BA6 /* Frameworks */,
+				E76898BD1CABD3A500CA0BA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BDKSample;
+			productName = BDKSample;
+			productReference = E76898BF1CABD3A500CA0BA6 /* BDKSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E76898B71CABD3A500CA0BA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BDK;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Camp Mobile Inc.";
+				TargetAttributes = {
+					E76898BE1CABD3A500CA0BA6 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = E76898BA1CABD3A500CA0BA6 /* Build configuration list for PBXProject "BDKSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ko,
+			);
+			mainGroup = E76898B61CABD3A500CA0BA6;
+			productRefGroup = E76898C01CABD3A500CA0BA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E76898BE1CABD3A500CA0BA6 /* BDKSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E76898BD1CABD3A500CA0BA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E76899341CABE54000CA0BA6 /* launching_animation.mp4 in Resources */,
+				E76898DA1CABD43700CA0BA6 /* BDKLaunchScreen.xib in Resources */,
+				E768992B1CABD6F400CA0BA6 /* Localizable.strings in Resources */,
+				E76899021CABD5DD00CA0BA6 /* BDKBandViewController.xib in Resources */,
+				E76899041CABD5DD00CA0BA6 /* BDKLoginViewController.xib in Resources */,
+				E7214BCF1CC5CFC100BC16BD /* BandSDKBundle.bundle in Resources */,
+				E768990E1CABD5DD00CA0BA6 /* BDKPostListViewController.xib in Resources */,
+				E76898CF1CABD3A600CA0BA6 /* Assets.xcassets in Resources */,
+				E768990C1CABD5DD00CA0BA6 /* BDKPostFormViewController.xib in Resources */,
+				E768990A1CABD5DD00CA0BA6 /* BDKMessageFormViewController.xib in Resources */,
+				E76899061CABD5DD00CA0BA6 /* BDKMemberViewController.xib in Resources */,
+				E76899001CABD5DD00CA0BA6 /* BDKBandJoinViewController.xib in Resources */,
+				E76899081CABD5DD00CA0BA6 /* BDKMenuViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E76898BB1CABD3A500CA0BA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E76899031CABD5DD00CA0BA6 /* BDKLoginViewController.m in Sources */,
+				E76899241CABD60B00CA0BA6 /* UIAlertView+BDKSample.m in Sources */,
+				E76898C71CABD3A600CA0BA6 /* BDKAppDelegate.m in Sources */,
+				E76899011CABD5DD00CA0BA6 /* BDKBandViewController.m in Sources */,
+				E76898E31CABD5C900CA0BA6 /* BDKKeyboardAccessoryView.m in Sources */,
+				E76899221CABD60B00CA0BA6 /* NSError+BDKSample.m in Sources */,
+				E76899231CABD60B00CA0BA6 /* NSString+BDKSample.m in Sources */,
+				E76898C41CABD3A600CA0BA6 /* main.m in Sources */,
+				E768990D1CABD5DD00CA0BA6 /* BDKPostListViewController.m in Sources */,
+				E76899161CABD5EA00CA0BA6 /* BDKJoinableGuildBandManager.m in Sources */,
+				E76899051CABD5DD00CA0BA6 /* BDKMemberViewController.m in Sources */,
+				E768990F1CABD5DD00CA0BA6 /* BDKSplashViewController.m in Sources */,
+				E768990B1CABD5DD00CA0BA6 /* BDKPostFormViewController.m in Sources */,
+				E76899251CABD60B00CA0BA6 /* UIImage+BDKSample.m in Sources */,
+				E76899151CABD5EA00CA0BA6 /* BDKErrorHandler.m in Sources */,
+				E76899261CABD60B00CA0BA6 /* UITextView+BDKSample.m in Sources */,
+				E76898FF1CABD5DD00CA0BA6 /* BDKBandJoinViewController.m in Sources */,
+				E76899091CABD5DD00CA0BA6 /* BDKMessageFormViewController.m in Sources */,
+				E76899071CABD5DD00CA0BA6 /* BDKMenuViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E768992D1CABD6F400CA0BA6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E768992C1CABD6F400CA0BA6 /* en */,
+				E768992E1CABD70000CA0BA6 /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E76898D41CABD3A600CA0BA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E76898D51CABD3A600CA0BA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E76898D71CABD3A600CA0BA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/BDKSample/BDKSample-Prefix.pch";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/BDKSample/BDKSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = com.campmobile.BDKSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E76898D81CABD3A600CA0BA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/BDKSample/BDKSample-Prefix.pch";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/BDKSample/BDKSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = com.campmobile.BDKSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E76898BA1CABD3A500CA0BA6 /* Build configuration list for PBXProject "BDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E76898D41CABD3A600CA0BA6 /* Debug */,
+				E76898D51CABD3A600CA0BA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E76898D61CABD3A600CA0BA6 /* Build configuration list for PBXNativeTarget "BDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E76898D71CABD3A600CA0BA6 /* Debug */,
+				E76898D81CABD3A600CA0BA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E76898B71CABD3A500CA0BA6 /* Project object */;
+}

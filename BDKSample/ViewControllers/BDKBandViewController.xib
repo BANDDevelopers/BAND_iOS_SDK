@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BDKBandViewController">
+            <connections>
+                <outlet property="guildBandLabel" destination="myQ-MS-Qbc" id="6sF-Rg-OxB"/>
+                <outlet property="guildBandSegmentedControl" destination="bUo-w5-QUF" id="LOj-rV-crd"/>
+                <outlet property="indicator" destination="rS1-in-f9b" id="Qgi-eY-ox2"/>
+                <outlet property="searchingField" destination="JrL-jr-LXy" id="7e1-Me-gDh"/>
+                <outlet property="searchingLabel" destination="ycE-JL-Md4" id="lNc-Cr-qD2"/>
+                <outlet property="sortingCategorySegmentedControl" destination="TFR-s3-iYI" id="f39-t1-ZYm"/>
+                <outlet property="sortingDirectionSegmentedControl" destination="hEh-R5-iSK" id="nhx-z0-bKo"/>
+                <outlet property="sortingLabel" destination="khp-ib-seg" id="6Mr-g3-eWm"/>
+                <outlet property="tableView" destination="Wp2-Bt-EZT" id="rSv-Q4-UUH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5d-nj-fDY" userLabel="Option View">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="162"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guild Band" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myQ-MS-Qbc" userLabel="Guild Band Label">
+                            <rect key="frame" x="20" y="18" width="71" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bUo-w5-QUF" userLabel="Guild Band Segmented Control">
+                            <rect key="frame" x="105" y="12" width="119" height="29"/>
+                            <segments>
+                                <segment title="ALL"/>
+                                <segment title="YES"/>
+                                <segment title="NO"/>
+                            </segments>
+                            <connections>
+                                <action selector="valueChangedSegmentedControl:" destination="-1" eventType="valueChanged" id="cm8-lj-rpY"/>
+                            </connections>
+                        </segmentedControl>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khp-ib-seg" userLabel="Sorting Label">
+                            <rect key="frame" x="20" y="54" width="71" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TFR-s3-iYI" userLabel="Sorting Category Segmented Control">
+                            <rect key="frame" x="105" y="48" width="211" height="29"/>
+                            <segments>
+                                <segment title="Name"/>
+                                <segment title="Member Count"/>
+                            </segments>
+                            <connections>
+                                <action selector="valueChangedSegmentedControl:" destination="-1" eventType="valueChanged" id="I5X-Ub-6NB"/>
+                            </connections>
+                        </segmentedControl>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hEh-R5-iSK" userLabel="Sorting Direction Segmented Control">
+                            <rect key="frame" x="105" y="84" width="173" height="29"/>
+                            <segments>
+                                <segment title="Ascending"/>
+                                <segment title="Descending"/>
+                            </segments>
+                            <connections>
+                                <action selector="valueChangedSegmentedControl:" destination="-1" eventType="valueChanged" id="PkW-B4-Tp3"/>
+                            </connections>
+                        </segmentedControl>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Searching" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycE-JL-Md4" userLabel="Searching Label">
+                            <rect key="frame" x="20" y="127" width="71" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="JrL-jr-LXy" userLabel="Searching Field">
+                            <rect key="frame" x="105" y="120" width="475" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="qQv-NF-kmj"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="bUo-w5-QUF" firstAttribute="leading" secondItem="myQ-MS-Qbc" secondAttribute="trailing" constant="15" id="0gX-LE-gR9"/>
+                        <constraint firstItem="ycE-JL-Md4" firstAttribute="leading" secondItem="myQ-MS-Qbc" secondAttribute="leading" id="Agu-zy-WFl"/>
+                        <constraint firstItem="ycE-JL-Md4" firstAttribute="trailing" secondItem="myQ-MS-Qbc" secondAttribute="trailing" id="C2d-Rp-AUu"/>
+                        <constraint firstItem="khp-ib-seg" firstAttribute="trailing" secondItem="myQ-MS-Qbc" secondAttribute="trailing" id="FLd-BH-kt8"/>
+                        <constraint firstItem="myQ-MS-Qbc" firstAttribute="leading" secondItem="Y5d-nj-fDY" secondAttribute="leading" constant="20" id="Gm0-d9-B36"/>
+                        <constraint firstItem="JrL-jr-LXy" firstAttribute="leading" secondItem="bUo-w5-QUF" secondAttribute="leading" id="M7h-sP-yvs"/>
+                        <constraint firstItem="JrL-jr-LXy" firstAttribute="top" secondItem="hEh-R5-iSK" secondAttribute="bottom" constant="8" id="MsB-eN-g9T"/>
+                        <constraint firstItem="khp-ib-seg" firstAttribute="leading" secondItem="myQ-MS-Qbc" secondAttribute="leading" id="PQx-LO-uUe"/>
+                        <constraint firstItem="hEh-R5-iSK" firstAttribute="top" secondItem="TFR-s3-iYI" secondAttribute="bottom" constant="8" id="RNn-vl-q2z"/>
+                        <constraint firstItem="bUo-w5-QUF" firstAttribute="centerY" secondItem="myQ-MS-Qbc" secondAttribute="centerY" id="RjC-2I-70U"/>
+                        <constraint firstItem="bUo-w5-QUF" firstAttribute="top" secondItem="Y5d-nj-fDY" secondAttribute="top" constant="12" id="Ss1-nw-cLM"/>
+                        <constraint firstItem="JrL-jr-LXy" firstAttribute="centerY" secondItem="ycE-JL-Md4" secondAttribute="centerY" id="VZL-UY-cfZ"/>
+                        <constraint firstItem="TFR-s3-iYI" firstAttribute="centerY" secondItem="khp-ib-seg" secondAttribute="centerY" id="cdW-SU-tTB"/>
+                        <constraint firstAttribute="bottom" secondItem="JrL-jr-LXy" secondAttribute="bottom" constant="12" id="f0X-tS-0hl"/>
+                        <constraint firstItem="TFR-s3-iYI" firstAttribute="top" secondItem="bUo-w5-QUF" secondAttribute="bottom" constant="8" id="gQ7-69-LHb"/>
+                        <constraint firstItem="hEh-R5-iSK" firstAttribute="leading" secondItem="bUo-w5-QUF" secondAttribute="leading" id="gQv-i0-zEE"/>
+                        <constraint firstItem="TFR-s3-iYI" firstAttribute="leading" secondItem="bUo-w5-QUF" secondAttribute="leading" id="l3L-Mx-yu1"/>
+                        <constraint firstAttribute="trailing" secondItem="JrL-jr-LXy" secondAttribute="trailing" constant="20" id="tQF-qg-gsw"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wp2-Bt-EZT">
+                    <rect key="frame" x="0.0" y="162" width="600" height="438"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="a2c-Y6-ADU"/>
+                        <outlet property="delegate" destination="-1" id="0U7-aj-DZ8"/>
+                    </connections>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="rS1-in-f9b" userLabel="Indicator">
+                    <rect key="frame" x="290" y="371" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rS1-in-f9b" firstAttribute="centerX" secondItem="Wp2-Bt-EZT" secondAttribute="centerX" id="Geh-99-572"/>
+                <constraint firstItem="Y5d-nj-fDY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IQF-Ro-nk4"/>
+                <constraint firstAttribute="bottom" secondItem="Wp2-Bt-EZT" secondAttribute="bottom" id="NH7-j6-bsC"/>
+                <constraint firstItem="Wp2-Bt-EZT" firstAttribute="top" secondItem="Y5d-nj-fDY" secondAttribute="bottom" id="OLU-oe-ue3"/>
+                <constraint firstAttribute="trailing" secondItem="Wp2-Bt-EZT" secondAttribute="trailing" id="P9V-Sh-DhC"/>
+                <constraint firstItem="rS1-in-f9b" firstAttribute="centerY" secondItem="Wp2-Bt-EZT" secondAttribute="centerY" id="SJv-MT-CPz"/>
+                <constraint firstItem="Wp2-Bt-EZT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YMN-FU-Lva"/>
+                <constraint firstAttribute="trailing" secondItem="Y5d-nj-fDY" secondAttribute="trailing" id="iOD-pz-V2N"/>
+                <constraint firstItem="Y5d-nj-fDY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vkj-mA-iHN"/>
+            </constraints>
+            <point key="canvasLocation" x="436" y="368"/>
+        </view>
+    </objects>
+</document>

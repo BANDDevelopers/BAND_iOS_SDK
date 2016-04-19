@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BDKPostListViewController">
+            <connections>
+                <outlet property="indicator" destination="hWD-IL-QP0" id="Pcj-3g-eDl"/>
+                <outlet property="tableView" destination="1Ky-k9-Lls" id="QqI-Z8-n3K"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Ky-k9-Lls">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="qp3-Nz-07w"/>
+                        <outlet property="delegate" destination="-1" id="4WO-MP-5x7"/>
+                    </connections>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="hWD-IL-QP0">
+                    <rect key="frame" x="290" y="290" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1Ky-k9-Lls" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7Fc-Wn-4tl"/>
+                <constraint firstItem="hWD-IL-QP0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9r7-eo-LPE"/>
+                <constraint firstItem="1Ky-k9-Lls" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MDX-Yo-iaZ"/>
+                <constraint firstAttribute="trailing" secondItem="1Ky-k9-Lls" secondAttribute="trailing" id="SRS-oI-pzC"/>
+                <constraint firstItem="hWD-IL-QP0" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="TeP-lr-QqN"/>
+                <constraint firstAttribute="bottom" secondItem="1Ky-k9-Lls" secondAttribute="bottom" id="tt4-YI-Kqq"/>
+            </constraints>
+            <point key="canvasLocation" x="559" y="448"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BDKBandJoinViewController">
+            <connections>
+                <outlet property="clearButton" destination="BKn-hF-4GO" id="0gQ-ud-zet"/>
+                <outlet property="indicator" destination="6tn-S5-rZ7" id="6oi-Zs-9ue"/>
+                <outlet property="nicknameField" destination="ZZy-fC-Q75" id="0xW-Kw-LDp"/>
+                <outlet property="presetButton" destination="Qsj-Wr-9Wf" id="3KL-Yv-LBb"/>
+                <outlet property="profileImageURLField" destination="U6o-YF-HBM" id="xG5-d9-bLs"/>
+                <outlet property="profileImageView" destination="oCe-Rw-ybS" id="GpL-ll-Uyi"/>
+                <outlet property="reloadButton" destination="HUp-aP-S3F" id="o23-0m-eId"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qsj-Wr-9Wf">
+                    <rect key="frame" x="20" y="12" width="83" height="30"/>
+                    <state key="normal" title="Use Presets"/>
+                    <connections>
+                        <action selector="touchUpInsidePresetButton:" destination="-1" eventType="touchUpInside" id="lUU-d4-QjU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKn-hF-4GO" userLabel="Clear Button">
+                    <rect key="frame" x="123" y="12" width="57" height="30"/>
+                    <state key="normal" title="Clear All"/>
+                    <connections>
+                        <action selector="touchUpInsideClearButton:" destination="-1" eventType="touchUpInside" id="ypN-Bg-rkt"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ZZy-fC-Q75" userLabel="Nickname Field">
+                    <rect key="frame" x="20" y="54" width="560" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="2Zv-Uk-n21"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="U6o-YF-HBM" userLabel="Profile Image URL Field">
+                    <rect key="frame" x="20" y="96" width="560" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    <connections>
+                        <action selector="editingChangedProfileImageURLField:" destination="-1" eventType="editingChanged" id="8Wm-Ey-DxE"/>
+                        <outlet property="delegate" destination="-1" id="gJu-iI-Mh7"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oCe-Rw-ybS" userLabel="Profile Image View">
+                    <rect key="frame" x="225" y="134" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="5Mq-fE-vWn"/>
+                        <constraint firstAttribute="width" constant="150" id="g9h-dh-egt"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUp-aP-S3F" userLabel="Reload Button">
+                    <rect key="frame" x="383" y="254" width="47" height="30"/>
+                    <state key="normal" title="Reload"/>
+                    <connections>
+                        <action selector="touchUpInsideReloadButton:" destination="-1" eventType="touchUpInside" id="pfm-CY-y4N"/>
+                    </connections>
+                </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="6tn-S5-rZ7" userLabel="Indicator">
+                    <rect key="frame" x="290" y="290" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6tn-S5-rZ7" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="2Y2-HB-dMa"/>
+                <constraint firstItem="Qsj-Wr-9Wf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="12" id="4wP-Mx-ft9"/>
+                <constraint firstItem="ZZy-fC-Q75" firstAttribute="top" secondItem="Qsj-Wr-9Wf" secondAttribute="bottom" constant="12" id="5cv-hY-XoT"/>
+                <constraint firstItem="U6o-YF-HBM" firstAttribute="leading" secondItem="ZZy-fC-Q75" secondAttribute="leading" id="5zF-Jf-BAj"/>
+                <constraint firstItem="6tn-S5-rZ7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="H88-3O-w6l"/>
+                <constraint firstItem="BKn-hF-4GO" firstAttribute="bottom" secondItem="Qsj-Wr-9Wf" secondAttribute="bottom" id="KEU-PI-PQw"/>
+                <constraint firstItem="BKn-hF-4GO" firstAttribute="leading" secondItem="Qsj-Wr-9Wf" secondAttribute="trailing" constant="20" id="UNV-6l-Viq"/>
+                <constraint firstAttribute="trailing" secondItem="ZZy-fC-Q75" secondAttribute="trailing" constant="20" id="V37-21-PdF"/>
+                <constraint firstItem="oCe-Rw-ybS" firstAttribute="top" secondItem="U6o-YF-HBM" secondAttribute="bottom" constant="8" id="eFs-jJ-mNE"/>
+                <constraint firstItem="ZZy-fC-Q75" firstAttribute="leading" secondItem="Qsj-Wr-9Wf" secondAttribute="leading" id="fhl-qk-dla"/>
+                <constraint firstItem="HUp-aP-S3F" firstAttribute="leading" secondItem="oCe-Rw-ybS" secondAttribute="trailing" constant="8" id="jY3-fe-cip"/>
+                <constraint firstItem="oCe-Rw-ybS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mJx-cD-yv1"/>
+                <constraint firstItem="ZZy-fC-Q75" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="srL-OY-tAE"/>
+                <constraint firstAttribute="trailing" secondItem="U6o-YF-HBM" secondAttribute="trailing" constant="20" id="u0R-zh-CR2"/>
+                <constraint firstItem="BKn-hF-4GO" firstAttribute="top" secondItem="Qsj-Wr-9Wf" secondAttribute="top" id="y8d-Ow-fmF"/>
+                <constraint firstItem="HUp-aP-S3F" firstAttribute="bottom" secondItem="oCe-Rw-ybS" secondAttribute="bottom" id="yX6-3c-nr9"/>
+                <constraint firstItem="U6o-YF-HBM" firstAttribute="top" secondItem="ZZy-fC-Q75" secondAttribute="bottom" constant="12" id="yz0-XY-4kl"/>
+            </constraints>
+            <point key="canvasLocation" x="-359" y="-151"/>
+        </view>
+    </objects>
+</document>

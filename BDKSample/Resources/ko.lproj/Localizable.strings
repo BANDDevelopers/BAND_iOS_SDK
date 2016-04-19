@@ -1,0 +1,158 @@
+/*
+ Localizable.strings
+ BDK Sample
+ 
+ Created by Alan on 2016. 3. 10..
+ Copyright © 2016년 Camp Mobile Inc. All rights reserved.
+ */
+
+
+"Ascending" = "오름순";
+"Cancel" = "취소";
+"Close" = "닫기";
+"Descending" = "내림순";
+"Name" = "이름";
+"OK" = "확인";
+"Searching" = "검색";
+"Sorting" = "정렬";
+
+"Access Friend List" = "친구 목록 조회";
+"Access Token" = "접근 토큰";
+"App Connected" = "앱 연동 중";
+"Author" = "작성자";
+"Band Creation" = "밴드 생성";
+"Band Information" = "밴드 정보 조회";
+"Band Join" = "밴드 가입";
+"Band Leave" = "밴드 탈퇴";
+"Band Selection" = "밴드 선택";
+"Bands" = "밴드";
+"Clear All" = "모두 지우기";
+"Connection" = "연동";
+"Not App Connected" = "앱 미연동";
+"Friends" = "친구";
+"Guild Band" = "길드밴드";
+"Guild Bands" = "길드밴드";
+"Join" = "가입";
+"Members" = "멤버";
+"Member Count" = "멤버 수";
+"Messages" = "메시지";
+"Official Band" = "공식밴드";
+"Open" = "이동";
+"Others" = "기타";
+"Posting" = "글 쓰기";
+"Posts" = "글";
+"Quota" = "쿼터";
+"Quotas" = "쿼터";
+"Reload" = "다시 불러오기";
+"Send" = "보내기";
+"Use Presets" = "모두 채우기";
+"Users" = "유저";
+
+
+"topMenu.menu.logout" = "로그아웃";
+"topMenu.menu.disconnect" = "연동 해제";
+"topMenu.menu.getAccessToken" = "접근 토큰 조회";
+
+"topMenu.menu.getProfile" = "내 프로필 조회";
+"topMenu.menu.getQuotas" = "쿼터 조회";
+
+"topMenu.menu.getFriends" = "연동한 친구 목록 조회";
+"topMenu.menu.getBandMembers" = "밴드 멤버 목록 조회";
+
+"topMenu.menu.createGuildBand" = "길드밴드 생성";
+
+"topMenu.menu.joinOfficialBand" = "공식밴드 가입";
+"topMenu.menu.joinGuildBand" = "길드밴드 가입";
+
+"topMenu.menu.getBands" = "밴드 목록 조회";
+"topMenu.menu.getOfficialBandInformation" = "공식밴드 정보 조회";
+"topMenu.menu.getOfficialBandPosts" = "공식밴드 글 목록 조회";
+"topMenu.menu.getOfficialBandNotices" = "공식밴드 공지사항 조회";
+"topMenu.menu.getGuildBandPosts" = "길드밴드 글 목록 조회";
+"topMenu.menu.getGuildBandNotices" = "길드밴드 공지사항 조회";
+
+"topMenu.menu.writePost" = "글 쓰기";
+
+"topMenu.menu.sendInvitation" = "미연동 친구에게 초대 보내기";
+"topMenu.menu.sendMessage" = "연동한 친구에게 메시지 보내기";
+
+"topMenu.menu.openBand" = "밴드앱에서 밴드 열기";
+"topMenu.menu.openPost" = "밴드앱에서 글 열기";
+"topMenu.menu.openBandChat" = "밴드 앱에서 채팅방 열기";
+"topMenu.menu.installBandApp" = "밴드앱 설치하기";
+
+"topMenu.menu.leaveGuildBand" = "길드밴드 탈퇴";
+
+
+"member.option.connection" = "앱 연동 여부";
+"member.option.messageAcceptance" = "메시지 허용 여부";
+"member.option.searching.field.placeholder" = "멤버 이름을 입력해주세요.";
+
+"member.cell_detail.sendMessage" = "메시지 보내기";
+"member.cell_detail.invite" = "초대하기";
+
+
+"band.option.searching.field.placeholder" = "밴드 이름을 입력해주세요.";
+
+"band.join.nickname.placeholder" = "이 밴드에서 사용할 이름";
+"band.join.profileImageURL.placeholder" = "프로필 사진 URL";
+"band.join.joined" = "길드밴드 [%@]에 가입되었습니다.";
+"band.join.withdrawn" = "길드밴드 [%@]에서 탈퇴되었습니다.";
+
+
+"officialBand.notExist" = "공식밴드가 없습니다.";
+
+
+"post.form.content.placeHolder" = "글 내용을 입력해주세요.";
+"post.form.imageURL.placeholder" = "첨부 이미지 URL";
+"post.form.snippetTitle.placeholder" = "스니핏 제목";
+"post.form.snippetText.placeholder" = "스니핏 내용";
+"post.form.snippetLinkName.placeholder" = "스니핏 링크 텍스트";
+"post.form.snippetAndroidLink.placeholder" = "스니핏 안드로이드 링크";
+"post.form.snippetIOSLink.placeholder" = "스니핏 iOS 링크";
+"post.form.snippetText.preset" = "%@ 앱으로 테스트 중입니다.";
+"post.form.snippetLinkName.preset" = "%@ 앱 열기";
+"post.form.postingSucceeded" = "글 쓰기를 완료했습니다.";
+
+
+"message.form.invitation.preset" = "%@ 길드로 초대합니다.";
+"message.form.message.preset" = "%@ 앱에서 새소식을 보내왔습니다. 확인해 보시겠어요?";
+"message.form.title.placeholder" = "메시지 제목";
+"message.form.message.placeholder" = "메시지 내용";
+"message.form.imageURL.placeholder" = "첨부 이미지 URL";
+"message.form.linkName.placeholder" = "링크 텍스트";
+"message.form.androidLink.placeholder" = "안드로이드 링크";
+"message.form.iOSLink.placeholder" = "iOS 링크";
+"message.form.sendSucceeded" = "메시지를 보냈습니다.";
+
+
+"alert.band.isGuildBand" = "길드밴드 여부";
+
+"alert.customURL.message" = "아래 URL을 처리해야 합니다";
+
+"alert.disconnect.message" = "연동이 해제되었습니다.";
+
+
+"alert.error.auth.message" = "접근 토큰이 만료되어 로그아웃됩니다.\n다시 로그인해주세요.";
+"alert.error.bandAppNotInstalled.message" = "밴드앱이 설치되어 있지 않습니다.\n밴드앱을 설치하시겠습니까?";
+
+
+"alert.loginSucceeded.message" = "로그인 되었습니다.";
+"alert.logout.message" = "로그아웃 했습니다.";
+
+"alert.officialBand.isJoined" = "가입 여부";
+
+"alert.officialBandJoin.message" = "공식밴드에 가입되었습니다.";
+
+"alert.officialBandJoinQuery.message" = "공식밴드에 가입되지 않았습니다.\n가입하시겠습니까?";
+
+"alert.post.date" = "작성일";
+"alert.post.commentCount" = "댓글 수";
+
+"alert.profile.allowsMessages" = "메시지 허용 여부";
+"alert.profile.isConnected" = "앱 연동 여부";
+
+"alert.quotas.expiredAt" = "%@에 만료 예정";
+"alert.quotas.invitationQuota" = "초대 쿼터";
+"alert.quotas.messageQuota" = "메시지 쿼터";
+"alert.quotas.postQuota" = "포스트 쿼터";
